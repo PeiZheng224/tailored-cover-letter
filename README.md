@@ -2,7 +2,7 @@
 
 A reusable Codex skill for generating tailored U.S.-style cover letters with company research, role-resume fit analysis, honest weak-match brainstorming, and polished drafting.
 
-This skill is designed to be general-purpose. It does not contain any real person's resume, biography, private background, or personal profile. It uses only the candidate information provided during the current invocation.
+This skill is designed to be general-purpose. It does not contain any real person's resume, biography, private background, or personal profile. It uses candidate information provided during the current invocation and, when available and permitted, the current AI platform's visible user profile, memory, or saved preferences.
 
 ## What It Does
 
@@ -127,7 +127,7 @@ If your AI platform does not support multiple file uploads:
 Use a request like:
 
 ```text
-Follow these instructions as a reusable cover letter workflow. Use only the candidate information I provide in this chat. Do not assume access to memory, prior conversations, or personal files.
+Follow these instructions as a reusable cover letter workflow. Use the candidate information I provide in this chat and, if available and permitted, any visible user profile, memory, or saved preferences in this AI platform. Do not claim to access hidden memory, inaccessible prior conversations, private files, or user profile data that is not visible in the current environment.
 
 [Paste SKILL.md and relevant resource files]
 
@@ -147,9 +147,11 @@ Candidate profile: [Paste resume/profile]
 
 Not every platform will preserve the folder structure or automatically load referenced files. When in doubt, paste `SKILL.md` and the relevant `resources/` files directly into the same conversation.
 
-## Privacy Principle
+## Personalization and Privacy
 
-This skill should never assume access to prior conversations, ChatGPT memory, personal files, hidden profile data, or private background information. If candidate-specific information is missing, it should ask for it or proceed with clearly stated assumptions.
+When available and permitted by the user and platform, this skill may use the current agent's visible user profile, memory, or saved preferences to personalize tone, framing, and recurring career positioning.
+
+It should not assume memory exists, and it should not claim to access hidden memory, inaccessible prior conversations, private files, hidden profile data, or private background information. If useful personalization context is unavailable or uncertain, it should ask the user to provide a resume, profile, positioning statement, preferences, or application history during the current invocation.
 
 ## Repository Structure
 

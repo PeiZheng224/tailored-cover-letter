@@ -5,7 +5,7 @@ Run this checklist before finalizing any response.
 ## Privacy and Personalization
 
 - [ ] No private candidate information is stored inside the skill itself.
-- [ ] No assumptions are made from prior conversations or memory.
+- [ ] No assumptions are made from hidden memory, inaccessible prior conversations, or user profile data that is not visible in the current environment.
 - [ ] Candidate evidence comes only from the current invocation.
 - [ ] Missing candidate information is identified or handled with stated assumptions.
 

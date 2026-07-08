@@ -52,4 +52,4 @@ Verify before submission:
 
 ## Privacy Rule
 
-Do not infer personal details from memory, prior conversations, hidden profile data, local files, or unstated context. Use only information explicitly provided in the current invocation.
+Do not infer personal details from hidden memory, inaccessible prior conversations, private files, hidden profile data, or unstated context. Use current-invocation information and, when available and permitted, the current agent's visible user profile, memory, or saved preferences.

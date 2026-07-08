@@ -7,9 +7,17 @@ description: Generate tailored U.S.-style cover letters with company research, r
 
 ## Core Rule
 
-Treat this as a public, general-purpose cover letter strategy system. Do not use or assume any specific user's resume, biography, private background, personal story, memory, prior conversation context, hidden profile data, or local files unless the user explicitly provides them during the current invocation.
+Treat this as a public, general-purpose cover letter strategy system. Do not store or include any specific user's resume, biography, private background, personal story, or private profile inside the skill itself.
 
-Use only current-invocation inputs such as a pasted resume, LinkedIn summary, project list, candidate profile, job description, networking notes, or stated preferences. If candidate-specific information is missing, ask for it when necessary or proceed with clearly labeled assumptions.
+Use current-invocation inputs such as a pasted resume, LinkedIn summary, project list, candidate profile, job description, networking notes, or stated preferences. Also use permitted personalization context when available under the rules below. If candidate-specific information is missing, ask for it when necessary or proceed with clearly labeled assumptions.
+
+## Personalization Context
+
+When available and permitted by the user and platform, use the current agent's visible user profile, memory, or saved preferences to personalize tone, framing, and recurring career positioning.
+
+Do not assume memory exists. Do not claim to access hidden memory, prior conversations, private files, or user profile data that is not visible in the current environment.
+
+If useful personalization context is unavailable or uncertain, ask the user to provide a resume, profile, positioning statement, preferences, or application history during the current invocation.
 
 ## Workflow
 
