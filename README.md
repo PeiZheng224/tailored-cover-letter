@@ -1,4 +1,4 @@
-# Tailored Cover Letter Strategist
+# Tailored Cover Letter
 
 A reusable Codex skill for generating tailored U.S.-style cover letters with company research, role-resume fit analysis, honest weak-match brainstorming, and polished drafting.
 
@@ -40,7 +40,7 @@ Optional:
 ## Example Request
 
 ```text
-Use the tailored-cover-letter-strategist skill to write a cover letter for [Company] [Role Title].
+Use the tailored-cover-letter skill to write a cover letter for [Company] [Role Title].
 
 Here is the job description:
 [Paste job description]
@@ -68,13 +68,13 @@ Clone this repository into your Codex skills directory:
 
 ```bash
 mkdir -p "$HOME/.codex/skills"
-git clone https://github.com/PeiZheng224/tailored-cover-letter-strategist.git "$HOME/.codex/skills/tailored-cover-letter-strategist"
+git clone https://github.com/PeiZheng224/tailored-cover-letter.git "$HOME/.codex/skills/tailored-cover-letter"
 ```
 
 Then invoke it in Codex by name:
 
 ```text
-Use the tailored-cover-letter-strategist skill...
+Use the tailored-cover-letter skill...
 ```
 
 ## Use With Other AI Platforms
@@ -93,7 +93,7 @@ If your AI platform supports file uploads or project knowledge:
 Use a request like:
 
 ```text
-Use the attached tailored-cover-letter-strategist instructions to write a tailored U.S.-style cover letter.
+Use the attached tailored-cover-letter instructions to write a tailored U.S.-style cover letter.
 Follow SKILL.md as the main workflow and use the resources files as supporting frameworks.
 
 Company:
@@ -154,7 +154,7 @@ This skill should never assume access to prior conversations, ChatGPT memory, pe
 ## Repository Structure
 
 ```text
-tailored-cover-letter-strategist/
+tailored-cover-letter/
 ├── SKILL.md
 ├── resources/
 │   ├── intake_form.md

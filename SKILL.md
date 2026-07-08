@@ -1,9 +1,9 @@
 ---
-name: tailored-cover-letter-strategist
+name: tailored-cover-letter
 description: Generate tailored U.S.-style cover letters with company research, role-resume fit analysis, weak-match brainstorming, and polished drafting. Use when a user asks for a cover letter, application letter, company-specific application positioning, or help adapting their resume/profile to a target company and role.
 ---
 
-# Tailored Cover Letter Strategist
+# Tailored Cover Letter
 
 ## Core Rule
 

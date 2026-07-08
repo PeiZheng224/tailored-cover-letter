@@ -1,6 +1,6 @@
 # Sample Request
 
-Use the `tailored-cover-letter-strategist` skill to write a cover letter for `[Company]` `[Role Title]`.
+Use the `tailored-cover-letter` skill to write a cover letter for `[Company]` `[Role Title]`.
 
 Here is the job description:
 
