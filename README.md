@@ -62,7 +62,7 @@ Each invocation returns:
 4. Final Cover Letter
 5. Customization Notes
 
-## Installation
+## Use With Codex
 
 Clone this repository into your Codex skills directory:
 
@@ -76,6 +76,76 @@ Then invoke it in Codex by name:
 ```text
 Use the tailored-cover-letter-strategist skill...
 ```
+
+## Use With Other AI Platforms
+
+This repository is also usable as a portable prompt pack for AI assistants that do not natively support Codex skills, including Claude, Gemini, ChatGPT, Perplexity, and other LLM tools.
+
+### Option 1: Upload or Attach the Repository Files
+
+If your AI platform supports file uploads or project knowledge:
+
+1. Upload `SKILL.md`.
+2. Upload the files in `resources/`.
+3. Optionally upload the files in `examples/`.
+4. Ask the assistant to follow `SKILL.md` as the main instruction file and use the `resources/` files as supporting references.
+
+Use a request like:
+
+```text
+Use the attached tailored-cover-letter-strategist instructions to write a tailored U.S.-style cover letter.
+Follow SKILL.md as the main workflow and use the resources files as supporting frameworks.
+
+Company:
+[Company]
+
+Role:
+[Role Title]
+
+Job description:
+[Paste job description]
+
+Candidate profile:
+[Paste resume, LinkedIn summary, project list, or professional profile]
+```
+
+### Option 2: Paste the Core Instructions
+
+If your AI platform does not support multiple file uploads:
+
+1. Open `SKILL.md`.
+2. Paste its contents into the AI assistant.
+3. Add any relevant resource files, especially:
+   - `resources/intake_form.md`
+   - `resources/company_research_framework.md`
+   - `resources/role_resume_match_framework.md`
+   - `resources/cover_letter_structure.md`
+   - `resources/output_template.md`
+   - `resources/quality_control_checklist.md`
+4. Then paste the job description and candidate profile.
+
+Use a request like:
+
+```text
+Follow these instructions as a reusable cover letter workflow. Use only the candidate information I provide in this chat. Do not assume access to memory, prior conversations, or personal files.
+
+[Paste SKILL.md and relevant resource files]
+
+Now write a tailored cover letter for:
+Company: [Company]
+Role: [Role Title]
+Job description: [Paste JD]
+Candidate profile: [Paste resume/profile]
+```
+
+### Platform Notes
+
+- Claude Projects: add `SKILL.md` and `resources/` as project knowledge.
+- Gemini: upload the files into the current chat or Gem, then ask it to follow `SKILL.md`.
+- ChatGPT: upload the files in a chat or add them to a custom GPT's knowledge.
+- Any text-only assistant: paste `SKILL.md` plus the most relevant resource files into the prompt.
+
+Not every platform will preserve the folder structure or automatically load referenced files. When in doubt, paste `SKILL.md` and the relevant `resources/` files directly into the same conversation.
 
 ## Privacy Principle
 
